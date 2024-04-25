@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Cancer prediction</title>
+  <style>
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    video {
+       position: absolute;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center; /* Add this line to center the cards horizontally */
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 10;
+      padding: 10;
+      background-size: cover;
+      background-position: top;
+    }
+
+    p {
+      padding: 10px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    .flip-card {
+      perspective: 1000px;
+      width: 400px;
+      height: 500px;
+      margin: 40px;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: antiquewhite;
+      display: inline-block;
+    }
+
+    .flip-card-inner {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #3498db;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flip-card-back {
+      background-color: grey;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotateY(180deg);
+    }
+
+    button {
+      font-style: oblique;
+      font-size: 20px;
+      background-color: plum;
+      color: #fff;
+      border-radius: 20px;
+      padding: 5px;
+      margin: 15px;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="../static/boomber.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <center>
+    <h1>DATA ANALYSIS</h1>
+  </center>
+
+  <div class="card-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="../static/piechart_page-0001.jpg" alt="piechart_page-0001.jpg" height="500" width="400">
+        </div>
+        <div class="flip-card-back">
+          <p>Kashmir is in the grip of a silent epidemic as cancer cases continue to surge, a distressing reality underscored by the substantial increase in registrations at two prominent tertiary care hospitals—Sher-i-Kashmir Institute of Medical Sciences (SKIMS) and Shri Maharaja Hari Singh (SMHS) Hospital.
+
+            According to the gathered data, SKIMS has documented a staggering 44,112 cancer cases from 2013 to 2023, indicating a profound health crisis unfolding in the Valley. SMHS hospital has reported 6,379 cases from 2017 to 2023, emphasising the magnitude of the issue.
+
+            The concentration of cancer patients seeking treatment in these hospitals underscores the severity of the issue and points towards a significant rise in cancer incidence in Kashmir.
+
+            A detailed breakdown of the SKIMS data exposes a concerning progression of cancer cases over the years. In 2014, 3,930 patients were diagnosed, with the numbers steadily increasing each year. The data reveals 4,417 cases in 2015, 4,320 in 2016, 4,352 in 2017, 4,816 in 2018, 4,337 in 2019, 3,814 in 2020, 4,727 in 2021, 5,294 in 2022, and up to September 2023, 4,095 cancer registrations. This brings the total tally of cancer registrations at SKIMS from 2014 to September 2023 to a staggering 44,112.
+
+            source:greaterkashmir
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="../static/pie1_page-0001.jpg" alt="pie1" height="500" width="400">
+        </div>
+        <div class="flip-card-back">
+          <p>The number of cancer patients is on the rise in Jammu and Kashmir as around 7,000 patients have been registered alone at the Department of Radiation Oncology, SMHS Hospital GMC Srinagar since 2017.
+
+            Official statistics revealed that 1640 cases of cancer were reported at the Radiation Oncology Department in 2023, which is the highest in the last several years.
+
+            491 new cancer patients were registered at the radiation oncology department, SMHS in 2017; 1,032 in 2018, 801 in 2019, 650 in 2020, 1,010 in 2021, 1,169 in 2022 and 1,640 in 2023.
+
+            Officials said that around 5 to 6 new cancer patients are being registered at the department every day.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="../static/barplot_page-0001.jpg" alt="barplot_page-0001.jpg" height="500" width="400">
+        </div>
+        <div class="flip-card-back">
+          <p>Prof Manzoor Ahmad, Head of the Department of Radiation Oncology at GMC Srinagar said there is a sharp increase in new cancer cases in J&K, with the department registering a record number of 1640 cases in 2023, out of which 911 were males and 729 were females.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="../static/subplot1_page-0001.jpg" alt="subplot1_page-0001.jpg" height="500" width="400">
+        </div>
+        <div class="flip-card-back">
+          <p>"The most common tumor in males was lung cancer and in females breast cancer. This scenario looks very grim as far as lung being the most common tumor in males is concerned because this cancer has a direct bearing and relation with tobacco use," he said.
+
+            "This indicates the magnitude of tobacco products in our society and how much awareness we have to make among the general public regarding the use of tobacco," he said.
+
+            As far as breast cancer in females is concerned, one of the major reasons is the lack of physical activity and obesity. "So both the common cancers, whether it is lung in males or breast in females, could be easily avoided if we make the change in lifestyle," Prof Ahmad said.
+            source:Kashmirobserver.net
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
